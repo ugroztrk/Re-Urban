@@ -1,0 +1,152 @@
+*{
+  box-sizing: border-box;
+}
+
+#map{
+    position: fixed;
+    top: 6%;
+    left: 0;
+    width: 100%;
+    height: 94%;
+    background-color: #1d202e;
+}
+
+.info {
+  padding: 6px 8px;
+  font: 14px/16px normal 62.5% "proxima-nova-alt", Helvetica, Arial, sans-serif;
+  background: #363c57;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  color: grey;
+  bottom: 0;
+  text-align: center;
+}
+
+
+.info h4 {
+color: white;
+}
+
+.leaflet-control-layers {
+  background-color: #363c57;
+  color:white;
+  
+}
+
+.leaflet-bar a, .leaflet-control-layers-toggle {
+  background-color: #363c57;
+}
+
+
+
+.leaflet-bar a {
+  background-color: #363c57;
+  color:white;
+}
+
+.leaflet-bar a:hover {
+  background-color: #445086;
+}
+
+.leaflet-control-attribution {
+    display: none;
+  }
+  
+.leaflet-control-layers
+    > .leaflet-control-layers-list
+    > .leaflet-control-layers-base
+    > label
+    > span {
+    display: flex;
+  }
+  
+.my-div-id {
+    display: flex;
+  }
+  
+.leaflet-control-layers-overlays > label > span {
+    display: flex;
+  }
+
+#sidebarText, #sidebarTitle {
+    text-align: center;
+  }
+
+.modal {
+    display:none;
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.301);
+  }
+
+.modal-content {
+    background-color: rgb(255, 255, 255);
+    margin-top: 3%;
+    margin-left: 30%;
+    padding: 20px;
+    width: 35%;
+    height: 80%;
+    box-shadow: 0 5px 8px 0 black, 0 7px 20px 0 rgb(83, 83, 83);
+    border-radius:  1%;
+    animation-name:modalopen;
+    animation-duration: 1s;
+  }
+
+@keyframes modalopen{
+    from{
+      margin-top: 0%;
+      opacity: 0%;
+    }
+    to{
+      margin-top: 3%;
+      opacity: 100%;
+    }
+  }
+
+#locName{
+    border-radius: 1%;
+  }
+
+.form{
+    font-size: 125%;
+    text-align: center;
+  }
+
+#saveBtn {
+    position: fixed;
+    background: rgb(97, 97, 97);
+    color: white;
+    margin-top:  400px;
+    margin-left: 12%;
+    padding: 5px 10px;
+    font-size: 20px;
+  }
+
+#saveBtn:hover{
+    border-color: black;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .legend {
+    line-height: 18px;
+    color: white;
+}
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+
+.leaflet-container a.leaflet-popup-close-button{
+  color: white;
+}

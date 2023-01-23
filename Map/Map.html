@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Re-Urban</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+    <link rel="stylesheet" href="src/css/style.css">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="http://www.turnjs.com/lib/turn.min.js "></script> 
+
+    <!-- Full Screen -->
+
+    <script src='src/lib/Leaflet.fullscreen.min.js'></script>
+    <link href='src/lib/leaflet.fullscreen.css' rel='stylesheet' />
+
+    <!-- Mouse Position -->
+
+    <link rel="stylesheet" href="src/lib/L.Control.MousePosition.css">
+    <script src="src/lib/L.Control.MousePosition.js"></script>
+    
+    <!-- Leaflet Geoman -->
+
+    <link rel="stylesheet" href="src/lib/leaflet-geoman.css">
+    <script src="src/lib/leaflet-geoman.min.js"></script>
+
+    <!-- Leaflet Cluster -->
+
+    <link rel="stylesheet" href="src/lib/MarkerCluster.css">
+    <link rel="stylesheet" href="src/lib/MarkerCluster.Default.css">
+
+    <!-- Leaflet Sidebar -->
+
+    <link rel="stylesheet" href="src/lib/L.Control.Sidebar.css">
+    <script src="src/lib/L.Control.Sidebar.js"></script>
+
+    <link rel="stylesheet" href="src/lib/leaflet-gps.css">
+    <script src="src/lib/leaflet-gps.js"></script>
+
+    <link rel="stylesheet" href="src/css/header.css">
+    <link rel="stylesheet" href="src/css/checkbox.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo"><div class="text"></div>Re-Urban</div></div>
+        <div class="nav">
+          <ul>
+            <li><a href="C:/Users/Dell/Desktop/TezYedek/Login_page/login_page.html">Çıkış Yap</a></li>
+            <!-- <li><a href="">Volume II</a></li>
+            <li><a href="">About</a></li> -->
+          </ul>
+        </div>
+      </header>
+
+    <div id="map"></div>
+    <div id="sidebar">
+        <h1>Leaflet-Sidebar</h1>
+    </div>
+    <div id="simpleModal" class="modal">
+        <div class="modal-content">
+            <form class="form">
+                <label for="locName">Konum Adı:</label>
+                <input type="text" id="locName" name="locName" maxlength="50" autocomplete="off" spellcheck="false">
+            </form>
+            <button id="saveBtn">Kaydet</button>
+        </div>
+    </div>
+</body>
+
+</html>
+    <!-- Leaflet GPS -->
+    
+    <script src="src/json/il_sinir.js"></script>
+    <script src="src/json/usak_sinir.js"></script>
+    <script src="src/lib/leaflet.markercluster.js"></script>
+    <script src="src/lib/L.TileLayer.BetterWMS.js"></script>
+<script src="src/js/main.js"></script>
+<script src="src/js/tools.js"></script>
+
+
+
+
+

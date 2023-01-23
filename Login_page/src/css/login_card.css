@@ -1,0 +1,167 @@
+
+@font-face {
+    font-family: modernFont;
+    src: url(ethnocentric\ rg.otf);
+  }
+
+html,
+body,
+.wrapper {
+  height: 100%;
+}
+
+@keyframes rotate {
+    100% {
+      background-position: 15% 50%;
+    }
+  }
+
+  body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 0 24px;
+    background-image: url("background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Euclid Circular A";
+    color: #000;
+    animation: rotate 6s infinite alternate linear;
+  }
+
+@media (width >= 500px) {
+  body {
+    padding: 0;
+  }
+}
+
+.login {
+  position: fixed;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 90%;
+  padding: 40px 30px 44px;
+  border-radius: 22px;
+  background: #161616;
+  text-align: center;
+}
+
+@media (width >= 450px) {
+  .login {
+    width: 380px;
+  }
+}
+
+.login > h2 {
+    cursor: default;
+    font-family: modernFont;
+    color: white;
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0 0 30px;
+  }
+
+
+.login-form {
+  display: grid;
+  gap: 16px;
+  place-items: center;
+  width: 100%;
+  margin: 0;
+}
+
+.textbox {
+  width: 100%;
+  position: relative;
+}
+
+.textbox span {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  translate: 0 -50%;
+  color: rgba(255, 255, 255, 0.38);
+}
+
+.login-form input,
+.login-form button {
+  width: 80%;
+  height: 60px;
+  outline: none;
+  padding: 0;
+  font-family: inherit;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.login-form input {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  font-size: 18px;
+  padding: 0 20px 0 50px;
+  color: white;
+}
+
+.login-form input:focus {
+  border-color: #157ae1;
+}
+
+.login-form input:focus ~ span {
+  color: #157ae1;
+}
+
+.login-form button {
+  cursor: pointer;
+  background: url("button-bck.svg");
+  background-size: cover;
+  color: #f9f9f9;
+  border: 0;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.login-form a {
+  color: #157ae1;
+  font-size: 16px;
+  text-align: left;
+  text-decoration: none;
+}
+
+.login-form a:hover {
+    text-decoration: underline;
+}
+
+.login-form button:hover {
+    border: 3px solid #157ae1;
+    color: #157ae1;
+}
+
+#errMsg {
+  color: red;
+  font-size: 16px;
+  text-align: left;
+  text-decoration: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: none;
+}
+
+.inputAnimate {
+  animation: shake 0.1635s 0s 3;
+}
+
+.inputColor{
+  animation: err 0.1635s 0s 3 ease-in-out;
+}
+
+@keyframes shake {
+  0%{translate: 0;}
+  25%{translate: 8px 0;}
+  75%{translate: -8px 0;}
+  100%{translate: 0;}
+}
+@keyframes err{
+  0%{border-color: red;}
+}
